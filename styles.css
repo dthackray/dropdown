@@ -44,6 +44,9 @@ body {
     border-radius: var(--radius);
     margin-top: 0.3rem;
     background: white;
+    transform: translateY(0.5rem);
+    visibility: hidden;
+    opacity: 0;
 }
 
 .dropdown a {
@@ -58,4 +61,15 @@ body {
 .dropdown a:hover {
     background-color: var(--color);
     color: white;
+}
+
+.show {
+    transform: translateY(0rem);
+    visibility: visible;
+    opacity: 1;
+}
+
+.arrow {
+    transform: rotate(180deg);
+    transition: 0.2s ease;
 }
