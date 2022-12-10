@@ -1,8 +1,8 @@
-const dropdownBtn = document.getElementById("btn")
-const dropdownMenu = document.getElementById("dropdown")
-const toggleArrow = document.getElementById("arrow")
+const dropdownBtn = document.querySelector("#btn")
+const dropdownMenu = document.querySelector("#dropdown")
+const toggleArrow = document.querySelector("#arrow")
 
-const toggleDropdown = function () {
+const toggleDropdown = () => {
     dropdownMenu.classList.toggle("show")
     toggleArrow.classList.toggle("arrow")
 }
